@@ -7,10 +7,15 @@ const HeaderSection = () => {
 
   return (
     <div className="w-full">
-      <nav className="bg-gray-400/20 w-full flex items-center md:justify-between justify-between px-5 py-5">
-        <div className="relative text-xl flex gap-3 font-bold items-center">
+      <nav className="bg-gray-400/20 w-full flex items-center justify-between px-5 py-5">
+        <a className="w-fit md:block hidden" href="./../../index.html">
+          <h1 className="text-2xl font-semibold cursor-pointer font-serif hover:text-cyan-700 duration-300 transition w-fit">
+            MRI Rakib
+          </h1>
+        </a>
+        <div className="relative text-xl flex gap-3 font-bold items-center md:hidden">
           <div className="flex">
-            <button className="md:hidden text-2xl" onClick={navShowHide}>
+            <button className="text-2xl" onClick={navShowHide}>
               <RiMenu2Fill />
             </button>
             {navShow && (
@@ -41,11 +46,6 @@ const HeaderSection = () => {
             )}
           </div>
         </div>
-        <a href="./../../index.html">
-          <h1 className="md:block hidden text-2xl font-semibold cursor-pointer font-serif hover:text-cyan-700 duration-300 transition">
-            MRI Rakib
-          </h1>
-        </a>
 
         <ul className="md:flex hidden items-center gap-3">
           <li className="text-base font-medium hover:bg-cyan-600 hover:text-white transition-all duration-200 py-1 px-3 rounded-lg">
