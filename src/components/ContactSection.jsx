@@ -1,8 +1,35 @@
-import React from "react";
+import { useRef } from "react";
 import { TextField, Button } from "@mui/material";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const ContactSection = () => {
+  const formRef = useRef();
+
+  // HANDLE SEND MESSAGE
+  const handleSendMessage = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_PUBLIC_API_KEY
+      )
+      .then(
+        () => {
+          toast.success("Message sent successfully!");
+          formRef.current.reset();
+        },
+        (error) => {
+          toast.error("Failed to send message. Try again.");
+          console.log(error);
+        }
+      );
+  };
+
   return (
     <section
       id="contact"
@@ -50,9 +77,20 @@ const ContactSection = () => {
 
       {/* Right side - Contact Form */}
       <div className="flex-1">
-        <form className="flex flex-col gap-4">
-          <TextField label="Name" variant="outlined" fullWidth required />
+        <form
+          ref={formRef}
+          onSubmit={handleSendMessage}
+          className="flex flex-col gap-4"
+        >
           <TextField
+            name="from_name"
+            label="Name"
+            variant="outlined"
+            fullWidth
+            required
+          />
+          <TextField
+            name="from_email"
             label="Email"
             type="email"
             variant="outlined"
@@ -60,6 +98,7 @@ const ContactSection = () => {
             required
           />
           <TextField
+            name="message"
             label="Message"
             multiline
             rows={5}
@@ -70,7 +109,6 @@ const ContactSection = () => {
           <Button
             type="submit"
             variant="contained"
-            color="primary"
             className="bg-cyan-600 hover:bg-cyan-700"
           >
             Send Message

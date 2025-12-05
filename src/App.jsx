@@ -7,6 +7,7 @@ import FooterSection from "./components/FooterSection";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const App = () => {
       <ProjectsSection></ProjectsSection>
       <ContactSection></ContactSection>
       <FooterSection></FooterSection>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

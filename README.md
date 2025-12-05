@@ -15,7 +15,7 @@
 - **Projects Section:** Showcases multiple projects with description, tech stack, live link, and GitHub links.
 - **Contact Section:** Left side shows contact info (Email, GitHub, LinkedIn), right side has a functional MUI contact form.
 - **Animations:** Smooth transitions using **Framer Motion** and typewriter effect for tech stack display.
-- **Download CV Button:** Directly download PDF of resume.
+- **Email Message:** Directly send message through **EmailJS**.
 
 ---
 
