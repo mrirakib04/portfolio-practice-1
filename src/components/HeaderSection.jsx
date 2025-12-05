@@ -16,7 +16,7 @@ const HeaderSection = () => {
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="w-full px-2 flex flex-col items-center"
     >
-      <div id="home"></div>
+      <section id="home"></section>
       <nav className="bg-gray-400/90 w-full flex items-center justify-between px-3 py-3 max-w-6xl mx-auto fixed mt-2 shadow-md z-50 rounded-full">
         <div className="flex items-center gap-2 relative">
           <button className="text-2xl md:hidden" onClick={navShowHide}>
@@ -86,11 +86,11 @@ const HeaderSection = () => {
         </ul>
 
         <a
-          href="./../assets/cv_3_updated-photo-description.pdf"
-          download="CV of Md Rakibul Islam Rakib.pdf"
+          href="https://github.com/mrirakib04/"
+          target="_blank"
           className="px-3 py-2 rounded-full bg-white hover:bg-black hover:text-white transition duration-300 sm:text-base text-sm font-medium"
         >
-          Download CV
+          GitHub
         </a>
       </nav>
 
