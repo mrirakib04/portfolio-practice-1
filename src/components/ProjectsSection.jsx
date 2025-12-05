@@ -13,6 +13,7 @@ const projects = [
       "MongoDB",
       "Firebase",
       "Tailwind CSS",
+      "SSL Commerze",
     ],
     live: "https://mrirakib-sks-web-test.netlify.app/",
     github: "https://github.com/mrirakib04/sks-web",
