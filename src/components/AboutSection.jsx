@@ -7,7 +7,7 @@ const AboutSection = () => {
       className="w-full max-w-5xl mx-auto px-4 py-16 flex flex-col md:flex-row items-center gap-10"
     >
       {/* Left Side Image */}
-      <div>
+      <div data-aos="zoom-in">
         <img
           src={aboutImage}
           alt="About Me"

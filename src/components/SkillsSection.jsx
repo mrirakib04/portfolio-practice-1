@@ -110,7 +110,7 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="w-full max-w-7xl mx-auto px-4 py-16">
+    <section id="skills" className="w-full max-w-5xl mx-auto px-4 py-16">
       <h2 className="text-3xl md:text-4xl font-bold mb-8">My Skills</h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
