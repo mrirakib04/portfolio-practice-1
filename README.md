@@ -36,5 +36,5 @@
 ## Contact
 
 - **Email:** [mdrakibulislam11928@gmail.com](mailto:mdrakibulislam11928@gmail.com)
-- **GitHub:** [github.com/mrirakib04](https://github.com/mrirakib04)
+- **Phone:** [+8801955151970](tel:+8801955151970)
 - **LinkedIn:** [linkedin.com/in/webdev-rakib](https://www.linkedin.com/in/webdev-rakib/)

@@ -15,7 +15,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center max-w-[1480px] mx-auto w-full">
+    <div className="flex flex-col items-center max-w-[1480px] mx-auto w-full bg-black text-white font-serif">
       <HeaderSection></HeaderSection>
       <AboutSection></AboutSection>
       <SkillsSection></SkillsSection>

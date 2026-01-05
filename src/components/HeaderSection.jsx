@@ -104,16 +104,16 @@ const HeaderSection = () => {
         >
           <h1 className="md:text-3xl sm:text-2xl text-xl font-bold">
             Hi, I'm <br />{" "}
-            <span className="lg:text-5xl sm:text-4xl font-serif bg-gradient-to-r from-sky-800 via-black to-teal-800 text-transparent bg-clip-text">
+            <span className="lg:text-5xl sm:text-4xl font-serif bg-gradient-to-r from-sky-800 via-white/80 to-teal-800 text-transparent bg-clip-text">
               {" "}
               Md Rakibul Islam{" "}
             </span>{" "}
             <br />{" "}
-            <span className="md:text-4xl text-3xl font-serif bg-gradient-to-br from-purple-500 to-black text-transparent bg-clip-text">
+            <span className="md:text-4xl text-3xl font-serif bg-gradient-to-br from-purple-600 to-white/80 text-transparent bg-clip-text">
               Rakib
             </span>
           </h1>
-          <p className="mt-3 text-gray-700 text-lg">
+          <p className="mt-3 text-gray-400 text-lg">
             Full Stack Developer | MERN Specialist |{" "}
             <Typewriter
               words={["MongoDB", "Express.js", "React.js", "Node.js"]}
