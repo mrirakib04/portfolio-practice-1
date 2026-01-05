@@ -55,10 +55,10 @@ const ProjectsSection = () => {
       className="w-full max-w-6xl mx-auto px-6 py-10 bg-[#050505]"
     >
       <div className="flex flex-col items-center mb-8">
-        <h2 className="text-3xl md:text-5xl font-bold text-white mb-2 text-center">
+        <h2 className="sm:text-3xl text-2xl md:text-4xl font-bold text-white mb-2">
           My Projects
         </h2>
-        <div className="h-1.5 w-20 bg-purple-600 rounded-full"></div>
+        <div className="h-1 w-20 bg-purple-600 rounded-full"></div>
       </div>
 
       <div className="flex flex-col gap-12">
