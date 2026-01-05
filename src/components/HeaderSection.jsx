@@ -148,7 +148,7 @@ const HeaderSection = () => {
               View My Works <IoArrowRedoCircleOutline className="text-xl" />
             </a>
             <a
-              href="./../assets/Md Rakibul Islam Rakib_CV.pdf"
+              href="/Md Rakibul Islam Rakib_CV.pdf"
               download
               className="px-4 py-2 rounded-xl border border-white/10 bg-white/5 text-white font-bold hover:bg-white/10 transition-all flex items-center gap-2 group"
             >

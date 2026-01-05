@@ -4,7 +4,7 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="py-24 px-8 max-w-7xl mx-auto overflow-hidden"
+      className="py-10 px-8 max-w-6xl mx-auto overflow-hidden"
     >
       <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         {/* Left Side: Image (Occupying roughly 1/3 on large screens) */}
@@ -50,7 +50,7 @@ const AboutSection = () => {
             </h2>
           </div>
 
-          <div className="space-y-4 text-gray-400 leading-relaxed sm:text-base text-sm md:text-lg">
+          <div className="space-y-4 text-gray-400 leading-relaxed sm:text-base text-sm">
             <p>
               I am{" "}
               <span className="text-white font-semibold">
@@ -104,7 +104,7 @@ const AboutSection = () => {
           <div className="pt-6">
             <a
               href="#contact"
-              className="purple-gradient px-8 py-4 rounded-2xl md:text-lg font-bold text-white shadow-md hover:shadow-lg shadow-purple-900/80 hover:shadow-purple-900/70 bg-linear-to-br from-purple-800 via-purple-800 to-sky-800 hover:from-purple-900 hover:via-purple-900 transition-all duration-300 inline-flex items-center gap-2"
+              className="purple-gradient px-4 py-2 rounded-2xl md:text-lg font-bold text-white shadow-md hover:shadow-lg shadow-purple-900/80 hover:shadow-purple-900/70 bg-linear-to-br from-purple-800 via-purple-800 to-sky-800 hover:from-purple-900 hover:via-purple-900 transition-all duration-300 inline-flex items-center gap-2"
             >
               Let's Start Building
             </a>
